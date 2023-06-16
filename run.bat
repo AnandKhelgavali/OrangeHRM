@@ -1,0 +1,1 @@
+pytest -v -m="sanity" --html=Reports/report.html --browser=chrome -p no:warnings
