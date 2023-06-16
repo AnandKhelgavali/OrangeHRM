@@ -17,10 +17,9 @@ def setup(browser):
     elif browser == "firefox":
         driver = webdriver.Firefox()
     else:
-        driver = webdriver.Ie()
-        # chrome_option = webdriver.ChromeOptions()
-        # chrome_option.add_argument("headless")
-        # driver = webdriver.Chrome(options=chrome_option)
+        chrome_option = webdriver.ChromeOptions()
+        chrome_option.add_argument("headless")
+        driver = webdriver.Chrome(options=chrome_option)
     driver.maximize_window()
     return driver
 
